@@ -46,7 +46,7 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'Router',
     subtitle:
-        'A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.',
+        'A core mission of the Hub to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.',
   },
   {
     imgUrl: '/headset.svg',
