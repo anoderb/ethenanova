@@ -1,70 +1,92 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    imgUrl: '/ethernal-1.png',
+    title: 'Swap tokens & collectibles.',
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    imgUrl: '/ethernal-2.png',
+    title: 'Provide liquidity.',
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    imgUrl: '/ethernal-3.png',
+    title: 'Bridge.',
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    imgUrl: '/ethernal-4.png',
+    title: 'NFT.',
   },
   {
     id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    imgUrl: '/ethernal-5.png',
+    title: 'Tools.',
   },
 ];
 
+export const navlog =[
+  {
+    id: 'navlog',
+    imgUrl: '/people-01.png',
+    title: 'navbar logo',
+
+  }
+]
+
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Connect your Wallet.',
+  'Sign your wallet.',
+  'Enjoy to explore space',
 ];
 
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    title: 'Router',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.',
   },
   {
     imgUrl: '/headset.svg',
-    title: 'More realistic',
+    title: 'Marketplace',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.',
   },
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'Secure Provider',
+    subtitle:
+        'With the upcoming Interchain Security feature, ATOM will soon be securing many chains, in exchange for additional staking rewards.',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'Tools',
+    subtitle:
+        'Making it easier for you to do activities in the crypto world create bsnysk wallets and send to multiple accounts is now easier.',
+  },
+
 ];
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    imgUrl: '/ethernal-2.png',
+    title: 'Welcome to Ethernal Space',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+        'Read the vision of Ehernal and learn about powerful blockchain technology.',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    imgUrl: '/ethernal-3.png',
+    title: 'Provide service.',
     subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+        'Get support to bring user tp the interchain by providing service such as exhanges, wallets, and more.',
   },
   {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
+    imgUrl: '/ethernal-4.png',
+    title: 'Be a validator',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        'Join the validator in the crypto space',
   },
 ];
 

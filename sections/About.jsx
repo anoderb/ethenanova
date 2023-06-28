@@ -16,25 +16,21 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| About Ethernal" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{' '}
+        <span className="font-extrabold text-white">Ethernal Space</span> is a new space in the Crypto world, where you can wade through vast spaces on various networks from layer 1 layer 2 or others, you can experience the ease of transactions on {' '}
         <span className="font-extrabold text-white">
-          madness of the metaverse
+          Ethernal Space
         </span>{' '}
-        of today, using only{' '}
+        because this is the innovation{' '}
         <span className="font-extrabold text-white">VR</span> devices you can
         easily explore the metaverse world you want, turn your dreams into
         reality. Let's{' '}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
+        <span className="font-extrabold text-white">Ethernal Space</span> invites you to explore by scrolling down
       </motion.p>
 
       <motion.img

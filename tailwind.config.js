@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-black': '#1A232E',
+        'primary-black': '#000000',
         'secondary-white': '#c7c7c7',
       },
       transitionTimingFunction: {
@@ -18,5 +18,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };
