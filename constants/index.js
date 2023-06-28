@@ -2,7 +2,7 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/ethernal-1.png',
-    title: 'Swap tokens & collectibles.',
+    title: 'Swap tokens and collectibles.',
   },
   {
     id: 'world-2',
@@ -12,12 +12,12 @@ export const exploreWorlds = [
   {
     id: 'world-3',
     imgUrl: '/ethernal-3.png',
-    title: 'Bridge.',
+    title: 'Bridge to Interchain.',
   },
   {
     id: 'world-4',
     imgUrl: '/ethernal-4.png',
-    title: 'NFT.',
+    title: 'Mint NFT and collectibles.',
   },
   {
     id: 'world-5',
@@ -58,7 +58,7 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'Secure Provider',
     subtitle:
-        'With the upcoming Interchain Security feature, ATOM will soon be securing many chains, in exchange for additional staking rewards.',
+        'With the upcoming Interchain Security feature, ETHERNAL will soon be securing many chains, in exchange for additional staking rewards.',
   },
   {
     imgUrl: '/headset.svg',

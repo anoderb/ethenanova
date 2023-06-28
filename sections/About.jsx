@@ -26,10 +26,10 @@ const About = () => (
         <span className="font-extrabold text-white">
           Ethernal Space
         </span>{' '}
-        because this is the innovation{' '}
-        <span className="font-extrabold text-white">VR</span> devices you can
+        because this is the innovation.{' '}
+        {/* <span className="font-extrabold text-white">VR</span> devices you can
         easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{' '}
+        reality. Let's{' '} */}
         <span className="font-extrabold text-white">Ethernal Space</span> invites you to explore by scrolling down
       </motion.p>
 
