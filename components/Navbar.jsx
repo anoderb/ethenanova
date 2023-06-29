@@ -1,10 +1,10 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
 import Button from "./Button";
-import React, { useState , useEffect} from "react";
 
 export default function Navbar() {
   const [isDropdownHome, setIsDropdownHome] = useState(false);
@@ -14,7 +14,6 @@ export default function Navbar() {
   const [isDropdownBridgeMobile, setIsDropdownBridgeMobile] = useState(false);
   const [isDropdownNFTMobile, setIsDropdownNFTMobile] = useState(false);
   const [isHamburgerMenu, setIsHamburgerMenu] = useState(false);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,64 +26,64 @@ export default function Navbar() {
       setIsHamburgerMenu(false);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const handleDropdownHome = () => {
     setIsDropdownHome(!isDropdownHome);
-    if (isDropdownBridge == true) {
+    if (isDropdownBridge === true) {
       setIsDropdownBridge(false);
     }
-    if (isDropdownNFT == true) {
+    if (isDropdownNFT === true) {
       setIsDropdownNFT(false);
     }
   };
   const handleDropdownBridge = () => {
     setIsDropdownBridge(!isDropdownBridge);
-    if (isDropdownHome == true) {
+    if (isDropdownHome === true) {
       setIsDropdownHome(false);
     }
-    if (isDropdownNFT == true) {
+    if (isDropdownNFT === true) {
       setIsDropdownNFT(false);
     }
   };
   const handleDropdownNFT = () => {
     setIsDropdownNFT(!isDropdownNFT);
-    if (isDropdownBridge == true) {
+    if (isDropdownBridge === true) {
       setIsDropdownBridge(false);
     }
-    if (isDropdownHome == true) {
+    if (isDropdownHome === true) {
       setIsDropdownHome(false);
     }
   };
   const handleDropdownHomeMobile = () => {
     setIsDropdownHomeMobile(!isDropdownHomeMobile);
-    if (isDropdownBridgeMobile == true) {
+    if (isDropdownBridgeMobile === true) {
       setIsDropdownBridgeMobile(false);
     }
-    if (isDropdownNFTMobile == true) {
+    if (isDropdownNFTMobile === true) {
       setIsDropdownNFTMobile(false);
     }
   };
   const handleDropdownBridgeMobile = () => {
     setIsDropdownBridgeMobile(!isDropdownBridgeMobile);
-    if (isDropdownHomeMobile == true) {
+    if (isDropdownHomeMobile === true) {
       setIsDropdownHomeMobile(false);
     }
-    if (isDropdownNFTMobile == true) {
+    if (isDropdownNFTMobile === true) {
       setIsDropdownNFTMobile(false);
     }
   };
   const handleDropdownNFTMobile = () => {
     setIsDropdownNFTMobile(!isDropdownNFTMobile);
-    if (isDropdownBridgeMobile == true) {
+    if (isDropdownBridgeMobile === true) {
       setIsDropdownBridgeMobile(false);
     }
-    if (isDropdownHomeMobile == true) {
+    if (isDropdownHomeMobile === true) {
       setIsDropdownHomeMobile(false);
     }
   };
@@ -272,96 +271,102 @@ export default function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth={1.5}
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  className="w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                   />
                 </svg>
               </li>
               {isDropdownHomeMobile && (
-                  <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
-                    <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
-                      <li>
-                        <span>Products</span>
-                      </li>
-                      <li>
-                        <span>Bridge</span>
-                      </li>
-                      <li>
-                        <span>NFT</span>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              <li className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-3 cursor-pointer" onClick={handleDropdownBridgeMobile}>
+                <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
+                  <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
+                    <li>
+                      <span>Products</span>
+                    </li>
+                    <li>
+                      <span>Bridge</span>
+                    </li>
+                    <li>
+                      <span>NFT</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
+              <li
+                className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-3 cursor-pointer"
+                onClick={handleDropdownBridgeMobile}
+              >
                 <span className="text-[18px] pb-3">Bridge</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth={1.5}
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  className="w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                   />
                 </svg>
               </li>
               {isDropdownBridgeMobile && (
-                  <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
-                    <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
-                      <li>
-                        <span>Products</span>
-                      </li>
-                      <li>
-                        <span>Bridge</span>
-                      </li>
-                      <li>
-                        <span>NFT</span>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              <li className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-1 cursor-pointer" onClick={handleDropdownNFTMobile}>
+                <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
+                  <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
+                    <li>
+                      <span>Products</span>
+                    </li>
+                    <li>
+                      <span>Bridge</span>
+                    </li>
+                    <li>
+                      <span>NFT</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
+              <li
+                className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-1 cursor-pointer"
+                onClick={handleDropdownNFTMobile}
+              >
                 <span className="text-[18px] pb-3">NFT</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth={1.5}
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  className="w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                   />
                 </svg>
               </li>
               {isDropdownNFTMobile && (
-                  <div className="  bg-primary-black lg:hidden w-full -mt-3  overflow-hidden transition-height duration-300">
-                    <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
-                      <li>
-                        <span>Products</span>
-                      </li>
-                      <li>
-                        <span>Bridge</span>
-                      </li>
-                      <li>
-                        <span>NFT</span>
-                      </li>
-                    </ul>
-                  </div>
-                )}
+                <div className="  bg-primary-black lg:hidden w-full -mt-3  overflow-hidden transition-height duration-300">
+                  <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
+                    <li>
+                      <span>Products</span>
+                    </li>
+                    <li>
+                      <span>Bridge</span>
+                    </li>
+                    <li>
+                      <span>NFT</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </ul>
           </div>
         )}
