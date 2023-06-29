@@ -108,7 +108,7 @@ export default function Navbar() {
         </h2>
         <ul className="text-white text-[24px]  flex-row justify-between space-x-32 hidden lg:flex ">
           <li className="">
-            <a href="#" onClick={handleDropdownHome}>
+            <a href="/" onClick={handleDropdownHome}>
               Products
             </a>
             {isDropdownHome && (
@@ -153,7 +153,7 @@ export default function Navbar() {
             )}
           </li>
           <li className="">
-            <a href="#" onClick={handleDropdownNFT}>
+            <a href="/" onClick={handleDropdownNFT}>
               NFT
             </a>
             {isDropdownNFT && (
@@ -198,7 +198,7 @@ export default function Navbar() {
             )}
           </li>
           <li className="">
-            <a href="#" onClick={handleDropdownBridge}>
+            <a href="/" onClick={handleDropdownBridge}>
               Bridge
             </a>
             {isDropdownBridge && (
