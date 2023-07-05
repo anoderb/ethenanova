@@ -105,91 +105,91 @@ export default function Navbar() {
         <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
           ETHERNAL
         </h2>
-        <ul className="text-white text-[24px]  flex-row justify-between space-x-32 hidden lg:flex ">
-          <li className="">
-            <a href="/" onClick={handleDropdownHome}>
+        <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
+          <li className="relative">
+            <a href="#" className=" duration-200" onMouseClick={handleDropdownHome} onMouseLeave={handleDropdownHome} >
               Products
             </a>
             {isDropdownHome && (
-              <ul className="dropdown absolute bg-primary-black p-4 rounded-xl h-[280px] mt-8 w-[480px] -ml-48">
-                <li className="mb-4 justify-center items-center">
-                  <p className="text-[18px] mb-2">Solutions</p>
+              <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
+                <li className="mb-4 justify-center items-center ">
+                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">Products</p>
                   <div className="flex flex-row justify-between mb-4">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Appchains</p>
-                      <p className="text-[14px]">Get with Cosmos SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">Comet RF</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Marketplace</p>
+                      <p className="text-[14px] text-slate-300">Comming soon</p>
+                    </a>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Dex</p>
+                      <p className="text-[14px] text-slate-300">Cooming soon</p>
+                    </a>
                   </div>
                   <div className="flex flex-row justify-between">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
+                    {/* <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Wallet</p>
+                      <p className="text-[14px]">cooming soon</p>
+                    </a> */}
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Tools</p>
+                      <p className="text-[14px] text-slate-300">Cooming Soon</p>
+                    </a>
                   </div>
                 </li>
                 <li>
-                  <p className="text-[18px]">Learn</p>
+                  <p className="text-[20px]">Learn</p>
                   <div className="flex flex-row justify-between ">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Docs</p>
+                      <p className="text-[14px] text-slate-300">Comming soon</p>
+                    </a>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Tutorial</p>
+                      <p className="text-[14px] text-slate-300">Cooming soon</p>
+                    </a>
                   </div>
                 </li>
               </ul>
             )}
           </li>
           <li className="">
-            <a href="/" onClick={handleDropdownNFT}>
-              NFT
+            <a href="#" className="" onMouseClick={handleDropdownNFT} onMouseLeave={handleDropdownNFT}>
+              Resource
             </a>
             {isDropdownNFT && (
-              <ul className="dropdown absolute bg-primary-black p-4 rounded-xl h-[280px] mt-8 w-[480px] -ml-52 ">
-                <li className="mb-4 justify-center items-center">
-                  <p className="text-[18px] mb-2">Solutions</p>
+              <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
+                <li className="mb-4 justify-center items-center ">
+                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">Resource</p>
                   <div className="flex flex-row justify-between mb-4">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Appchains</p>
-                      <p className="text-[14px]">Get with Cosmos SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">Comet RF</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Ecosystem</p>
+                      <p className="text-[14px] text-slate-300">Cooming soon</p>
+                    </a>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Partner</p>
+                      <p className="text-[14px] text-slate-300">Cooming soon</p>
+                    </a>
                   </div>
                   <div className="flex flex-row justify-between">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]">Token</p>
+                      <p className="text-[14px] text-slate-300">Cooming soon</p>
+                    </a>
+                    <a href="/" className="flex-flex-col pr-4">
+                      <p className="text-[18px]"> Validator </p>
+                      <p className="text-[14px] text-slate-300"> Cooming soon</p>
+                    </a>
                   </div>
                 </li>
                 <li>
-                  <p className="text-[18px]">Learn</p>
+                  <p className="text-[18px] font-bold">Community</p>
                   <div className="flex flex-row justify-between ">
                     <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
+                      <p className="text-[18px]">Blog</p>
+                      <p className="text-[14px] text-slate-300">Cooming Soon</p>
                     </span>
                     <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
+                      <p className="text-[18px]">Discussion Forum</p>
+                      <p className="text-[14px] text-slate-300">Comming soon</p>
                     </span>
                   </div>
                 </li>
@@ -197,11 +197,11 @@ export default function Navbar() {
             )}
           </li>
           <li className="">
-            <a href="/" onClick={handleDropdownBridge}>
-              Bridge
+            <a href="/" className="">
+              About
             </a>
-            {isDropdownBridge && (
-              <ul className=" absolute bg-primary-black p-4 rounded-xl h-[280px] mt-8 w-[480px] -ml-44">
+            {/* {isDropdownBridge && (
+              <ul className=" absolute bg-primary-black p-4 rounded-xl h-[280px] mt-8 w-[480px]">
                 <li className="mb-4 justify-center items-center">
                   <p className="text-[18px] mb-2">Solutions</p>
                   <div className="flex flex-row justify-between mb-4">
@@ -239,7 +239,7 @@ export default function Navbar() {
                   </div>
                 </li>
               </ul>
-            )}
+            )} */}
           </li>
         </ul>
         <Button />
@@ -268,13 +268,13 @@ export default function Navbar() {
           />
         )}
         {isHamburgerMenu && (
-          <div className="absolute bg-primary-black text-white  lg:hidden w-full mt-10 -ml-[28px] md:-ml-[65px]">
-            <ul className="dropdown p-2 md:p-5 flex items-center justify-center flex-col">
+          <div className="absolute bg-gradient-to-b from-gray-900 to-slate-800 opacity-95 text-white lg:hidden w-full mt-11 -ml-[24px] md:-ml-[64px] rounded-xl">
+            <ul className="dropdown p-2 md:p-5 flex items-center justify-center flex-col opacity-75">
               <li
-                className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-3 cursor-pointer"
+                className="flex flex-row justify-between w-full px-8 mb-3 cursor-pointer"
                 onClick={handleDropdownHomeMobile}
               >
-                <span className="text-[18px] pb-3">Products</span>
+                <span className="text-[20px] pb-3">Products</span>
                 {isDropdownHomeMobile ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -308,25 +308,31 @@ export default function Navbar() {
                 )}
               </li>
               {isDropdownHomeMobile && (
-                <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
+                <div className="  bg-gray-920 lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
                   <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
                     <li>
-                      <span>Products</span>
+                      <span>Marketplace</span>
                     </li>
                     <li>
-                      <span>Bridge</span>
+                      <span>Dex</span>
                     </li>
                     <li>
-                      <span>NFT</span>
+                      <span>Tools</span>
+                    </li>
+                    <li>
+                      <span>Docs</span>
+                    </li>
+                    <li>
+                      <span>Tutorial</span>
                     </li>
                   </ul>
                 </div>
               )}
               <li
-                className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-3 cursor-pointer"
+                className="flex flex-row justify-between w-full px-8 mb-3 cursor-pointer"
                 onClick={handleDropdownBridgeMobile}
               >
-                <span className="text-[18px] pb-3">Bridge</span>
+                <span className="text-[18px] pb-3">Resource</span>
                 {isDropdownBridgeMobile ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -360,26 +366,39 @@ export default function Navbar() {
                 )}
               </li>
               {isDropdownBridgeMobile && (
-                <div className="  bg-primary-black lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
+                <div className=" lg:hidden w-full -mt-3 mb-2 overflow-hidden transition-height duration-300">
                   <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
                     <li>
-                      <span>Products</span>
+                      <span>Ecosystem</span>
                     </li>
                     <li>
-                      <span>Bridge</span>
+                      <span>Partner</span>
                     </li>
                     <li>
-                      <span>NFT</span>
+                      <span>Token</span>
+                    </li>
+                    <li>
+                      <span>Validator</span>
+                    </li>
+                    <li>
+                      <span>Blog</span>
+                    </li>
+                    <li>
+                      <span>Forum</span>
                     </li>
                   </ul>
                 </div>
               )}
               <li
-                className="flex flex-row justify-between  border-gray-500 border-b w-full px-8 mb-1 cursor-pointer"
+                className="flex flex-row justify-between  w-full px-8 mb-1 cursor-pointer"
                 onClick={handleDropdownNFTMobile}
               >
-                <span className="text-[18px] pb-3">NFT</span>
-                {isDropdownNFTMobile ? (
+                <span className="">
+                <a href="/" className="text-[18px] pb-3">
+                  About
+                </a>
+                </span>
+                {/* {isDropdownNFTMobile ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -409,10 +428,10 @@ export default function Navbar() {
                       d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                     />
                   </svg>
-                )}
+                )} */}
               </li>
-              {isDropdownNFTMobile && (
-                <div className="  bg-primary-black lg:hidden w-full -mt-3  overflow-hidden transition-height duration-300">
+              {/* {isDropdownNFTMobile && (
+                <div className=" lg:hidden w-full -mt-3  overflow-hidden transition-height duration-300">
                   <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
                     <li>
                       <span>Products</span>
@@ -425,7 +444,7 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </div>
-              )}
+              )} */}
             </ul>
           </div>
         )}
