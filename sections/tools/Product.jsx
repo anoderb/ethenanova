@@ -19,7 +19,7 @@ const Product = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-   <div className="mt-[50px] flex lg:grid lg:grid-cols-4 flex-col min-h-[70vh] gap-5 lg:space-x-1">
+   <div className="mt-[50px] flex lg:grid lg:grid-cols-3 flex-col min-h-[70vh] gap-5 lg:space-x-1">
           {productItem.map((world, index) => (
             <ToolsCard
               key={world.id}
