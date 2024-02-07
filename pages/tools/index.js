@@ -1,7 +1,7 @@
 // import React from "react";
-import { Footer, Navbar } from "../../components";
-import { Hero } from "../../sections";
-import Product from "../../sections/tools/Product";
+import { Footer, Navbar } from '../../components';
+import { Hero } from '../../sections';
+import Product from '../../sections/tools/Product';
 
 export default function Tools() {
   return (
