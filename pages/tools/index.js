@@ -3,7 +3,8 @@ import { Footer, Navbar } from '../../components';
 import { Hero } from '../../sections';
 import Product from '../../sections/tools/Product';
 
-export default function Tools() {
+
+function Tools() {
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
@@ -13,3 +14,5 @@ export default function Tools() {
     </div>
   );
 }
+
+export default Tools

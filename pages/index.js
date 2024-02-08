@@ -10,8 +10,9 @@ import {
   World,
 } from '../sections';
 
-const Home = () => (
-  <div className="bg-primary-black overflow-hidden">
+export default function index() {
+  return (
+    <div className="bg-primary-black overflow-hidden">
     <Navbar />
     <Hero />
     <div className="relative">
@@ -32,6 +33,5 @@ const Home = () => (
     </div>
     <Footer />
   </div>
-);
-
-export default Home;
+  );
+}

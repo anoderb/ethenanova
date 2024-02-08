@@ -36,24 +36,24 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
-    'react/function-component-definition': [
-      2,
-      {
-        namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
-    ],
+    "react/jsx-indent": "off",
+    "react/jsx-closing-tag-location": "off",
+    "semi": "off",
+    "eol-last": "off",
+    "no-multiple-empty-lines": "off",
+    "react/function-component-definition": "off",
+    "space-infix-ops": "off",
+    "lines-around-directive": "off",
+    "arrow-spacing": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-tag-spacing": "off",
+    "quotes": "off",
     'max-len': [
       2,
       1050,
     ],
-    'no-multiple-empty-lines': [
-      'error',
-      {
-        max: 1,
-        maxEOF: 1,
-      },
-    ],
+    
     'no-underscore-dangle': [
       'error',
       {

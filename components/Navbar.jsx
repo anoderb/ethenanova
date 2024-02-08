@@ -1,12 +1,13 @@
 'use client';
-
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import Button from './Button';
 
-export default function Navbar() {
+
+const Navbar=()=> {
   const [isDropdownHome, setIsDropdownHome] = useState(false);
   const [isDropdownBridge, setIsDropdownBridge] = useState(false);
   const [isDropdownNFT, setIsDropdownNFT] = useState(false);
@@ -26,10 +27,10 @@ export default function Navbar() {
       setIsHamburgerMenu(false);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -42,15 +43,15 @@ export default function Navbar() {
       setIsDropdownNFT(false);
     }
   };
-  const handleDropdownBridge = () => {
-    setIsDropdownBridge(!isDropdownBridge);
-    if (isDropdownHome === true) {
-      setIsDropdownHome(false);
-    }
-    if (isDropdownNFT === true) {
-      setIsDropdownNFT(false);
-    }
-  };
+  // const handleDropdownBridge = () => {
+  //   setIsDropdownBridge(!isDropdownBridge);
+  //   if (isDropdownHome === true) {
+  //     setIsDropdownHome(false);
+  //   }
+  //   if (isDropdownNFT === true) {
+  //     setIsDropdownNFT(false);
+  //   }
+  // };
   const handleDropdownNFT = () => {
     setIsDropdownNFT(!isDropdownNFT);
     if (isDropdownBridge === true) {
@@ -107,9 +108,9 @@ export default function Navbar() {
         </h2>
         <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
           <li className="relative">
-            <a href="#" className=" duration-200" onMouseClick={handleDropdownHome} onMouseLeave={handleDropdownHome} >
+            <Link href={"/"} className=" duration-200" onMouseClick={handleDropdownHome} onMouseLeave={handleDropdownHome} >
               Products
-            </a>
+            </Link>
             {isDropdownHome && (
               <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
                 <li className="mb-4 justify-center items-center ">
@@ -152,9 +153,9 @@ export default function Navbar() {
             )}
           </li>
           <li className="">
-            <a href="#" className="" onMouseClick={handleDropdownNFT} onMouseLeave={handleDropdownNFT}>
+            <Link href={'/'} className="" onMouseClick={handleDropdownNFT} onMouseLeave={handleDropdownNFT}>
               Resource
-            </a>
+            </Link>
             {isDropdownNFT && (
               <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
                 <li className="mb-4 justify-center items-center ">
@@ -452,3 +453,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+export default Navbar;
