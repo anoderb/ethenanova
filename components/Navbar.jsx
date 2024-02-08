@@ -104,7 +104,7 @@ const Navbar=()=> {
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
         <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-          ETHERNAL
+          ETHENANOVA
         </h2>
         <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
           <li className="relative">

@@ -22,15 +22,15 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Ethernal Space</span> is a new space in the Crypto world, where you can wade through vast spaces on various networks from layer 1 layer 2 or others, you can experience the ease of transactions on {' '}
+        <span className="font-extrabold text-white">ETHENA NOVA</span> is a new space in the Crypto world, where you can wade through vast spaces on various networks from layer 1 layer 2 or others, you can experience the ease of transactions on {' '}
         <span className="font-extrabold text-white">
-          Ethernal Space
+        ETHENA NOVA
         </span>{' '}
         because this is the innovation.{' '}
         {/* <span className="font-extrabold text-white">VR</span> devices you can
         easily explore the metaverse world you want, turn your dreams into
         reality. Let's{' '} */}
-        <span className="font-extrabold text-white">Ethernal Space</span> invites you to explore by scrolling down.
+        <span className="font-extrabold text-white">ETHENA NOVA</span> invites you to explore by scrolling down.
       </motion.p>
 
       <motion.img
