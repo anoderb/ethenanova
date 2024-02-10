@@ -1,11 +1,10 @@
-'use client';
-
+// 'use client';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
+import styles from '../../styles';
+import { fadeIn } from '../../utils/motion';
 
-import styles from '../styles';
-import { fadeIn } from '../utils/motion';
-
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const ToolsCard = ({ id, imgUrl, title,desc, index, active, handleClick }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -23,7 +22,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+      <Link href={'/Bridge'} className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
@@ -39,9 +38,12 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
-      </div>
+        <h2 className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
+          {desc}
+        </h2>
+      </Link>
     )}
   </motion.div>
 );
 
-export default ExploreCard;
+export default ToolsCard;

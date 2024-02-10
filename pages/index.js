@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar } from '../components/home';
 import {
   About,
   Explore,
@@ -8,7 +8,7 @@ import {
   Insights,
   WhatsNew,
   World,
-} from '../sections';
+} from '../sections/home';
 
 export default function index() {
   return (

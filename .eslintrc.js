@@ -49,6 +49,14 @@ module.exports = {
     "no-trailing-spaces": "off",
     "react/jsx-tag-spacing": "off",
     "quotes": "off",
+    "no-unused-vars": "off",
+    "import/newline-after-import": "off",
+    "comma-spacing": "off",
+
+
+
+
+
     'max-len': [
       2,
       1050,

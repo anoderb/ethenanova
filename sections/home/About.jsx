@@ -1,10 +1,9 @@
 'use client';
-
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { TypingText } from '../components';
-
-import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { TypingText } from '../../components/home';
+import styles from '../../styles';
+import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -38,7 +37,13 @@ const About = () => (
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"
+        
       />
+        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
+          <Link href={'/explore'} className="font-normal text-[16px] text-white">
+            Get Started
+          </Link>
+        </button>
     </motion.div>
   </section>
 );

@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
+import styles from '../../styles';
+import { navVariants } from '../../utils/motion';
 import Button from './Button';
 
 
@@ -103,9 +103,9 @@ const Navbar=()=> {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-          ETHENANOVA
-        </h2>
+        <Link href={'/'} className="font-extrabold text-[24px] leading-[30.24px] text-white">
+          ETHENA NOVA
+        </Link>
         <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
           <li className="relative">
             <Link href={"/"} className=" duration-200" onMouseClick={handleDropdownHome} onMouseLeave={handleDropdownHome} >
@@ -130,7 +130,7 @@ const Navbar=()=> {
                       <p className="text-[18px]">Wallet</p>
                       <p className="text-[14px]">cooming soon</p>
                     </a> */}
-                    <a href="/" className="flex-flex-col pr-4">
+                    <a href="/tools" className="flex-flex-col pr-4">
                       <p className="text-[18px]">Tools</p>
                       <p className="text-[14px] text-slate-300">Cooming Soon</p>
                     </a>
@@ -198,7 +198,7 @@ const Navbar=()=> {
             )}
           </li>
           <li className="">
-            <a href="/" className="">
+            <a href="/about" className="">
               About
             </a>
             {/* {isDropdownBridge && (
@@ -395,57 +395,11 @@ const Navbar=()=> {
                 onClick={handleDropdownNFTMobile}
               >
                 <span className="">
-                <a href="/" className="text-[18px] pb-3">
+                <a href="/about" className="text-[18px] pb-3">
                   About
                 </a>
                 </span>
-                {/* {isDropdownNFTMobile ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 15.75l7.5-7.5 7.5 7.5"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                )} */}
               </li>
-              {/* {isDropdownNFTMobile && (
-                <div className=" lg:hidden w-full -mt-3  overflow-hidden transition-height duration-300">
-                  <ul className="dropdown p-2 md:p-5 flex items-start pl-10 space-y-2 cursor-pointer flex-col">
-                    <li>
-                      <span>Products</span>
-                    </li>
-                    <li>
-                      <span>Bridge</span>
-                    </li>
-                    <li>
-                      <span>NFT</span>
-                    </li>
-                  </ul>
-                </div>
-              )} */}
             </ul>
           </div>
         )}
