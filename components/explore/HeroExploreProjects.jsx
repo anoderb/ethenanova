@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../../styles";
 import { staggerContainer, textVariant } from "../../utils/motion";
 
-const Hero = () => (
+const HeroExploreProjects = ({ name }) => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6 `}>
     <motion.div
       variants={staggerContainer}
@@ -14,7 +14,7 @@ const Hero = () => (
     >
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          EXPLORE
+          {name}
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
@@ -27,4 +27,4 @@ const Hero = () => (
   </section>
 );
 
-export default Hero;
+export default HeroExploreProjects;
