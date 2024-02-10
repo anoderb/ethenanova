@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { TitleText, TypingText } from "../../components/CustomTexts";
 import ExplorePage from "../../components/explore/ExplorePage";
-import { TitleText, TypingText } from "../../components/home";
 import exploreTools from "../../lib/constants/exploreTools";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";

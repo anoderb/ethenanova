@@ -1,10 +1,11 @@
-import Layout from "../components/Layout.jsx";
+import Layout from "../components/Layout";
+import About from "../partials/Home/AboutHome";
+import Explore from "../partials/Home/ExploreHome";
+import Hero from "../partials/Home/HeroHome";
+
 import {
-  About,
-  Explore,
   Feedback,
   GetStarted,
-  Hero,
   Insights,
   WhatsNew,
   World,

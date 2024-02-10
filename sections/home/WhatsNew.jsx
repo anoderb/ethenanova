@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NewFeatures, TitleText, TypingText } from "../../components/home";
+import { TitleText, TypingText } from "../../components/CustomTexts";
+import NewFeatures from "../../components/NewFeatures";
 import newFeatures from "../../lib/constants/newFeatures";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import planetVariants from "../../lib/framer/planetVariants";

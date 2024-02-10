@@ -7,7 +7,7 @@ import fadeIn from "../../lib/framer/animations/fadeIn";
 import planetVariants from "../../lib/framer/planetVariants";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";
-import { TitleText, TypingText } from "../home";
+import { TitleText, TypingText } from "../CustomTexts";
 
 const bridge = [
   {

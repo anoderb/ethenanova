@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TitleText, TypingText } from "../../components/home";
+import { TitleText, TypingText } from "../../components/CustomTexts";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";

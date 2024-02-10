@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout";
-import { About, Hero } from "../../sections/home";
+import About from "../../partials/Home/AboutHome";
+import Hero from "../../partials/Home/HeroHome";
 
 function Aboutpage() {
   return (

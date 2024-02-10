@@ -1,30 +1,27 @@
-"use client";
-
 import { motion } from "framer-motion";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import textVariant from "../../lib/framer/text/textVariant";
-import styles from "../../styles";
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 `}>
+  <section className="yPaddings pl-6 sm:pl-16">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className="innerWidth mx-auto flex flex-col"
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+      <h1 className="relative z-10 flex justify-center items-center flex-col">
+        <motion.div variants={textVariant(1.1)} className="heroHeading">
           Dashboard
-        </motion.h1>
+        </motion.div>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-          <h1 className={styles.heroHeading}> Interchain</h1>
+          <div className="heroHeading"> Interchain</div>
         </motion.div>
-      </div>
+      </h1>
     </motion.div>
   </section>
 );

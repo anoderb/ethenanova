@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 
-import { InsightCard, TitleText, TypingText } from "../../components/home";
+import { TitleText, TypingText } from "../../components/CustomTexts";
+import InsightCard from "../../components/InsightCard";
 import insights from "../../lib/constants/insights";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";

@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import navVariants from "../lib/framer/navVariants";
-import styles from "../styles";
-import Button from "./home/Button";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isDropdownHome, setIsDropdownHome] = useState(false);
@@ -93,16 +92,14 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav
+    <motion.header
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 relative z-50`}
+      className="xPaddings py-8 relative z-50"
     >
-      <div className="absolute w-[50%]  gradient-04" />
-      <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-      >
+      <div className="absolute w-[50%] gradient-04" />
+      <nav className="innerWidth mx-auto flex justify-between gap-8">
         <Link
           href={"/"}
           className="font-extrabold text-[24px] leading-[30.24px] text-white"
@@ -136,10 +133,6 @@ const Navbar = () => {
                     </a>
                   </div>
                   <div className="flex flex-row justify-between">
-                    {/* <a href="/" className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Wallet</p>
-                      <p className="text-[14px]">cooming soon</p>
-                    </a> */}
                     <a href="/tools" className="flex-flex-col pr-4">
                       <p className="text-[18px]">Tools</p>
                       <p className="text-[14px] text-slate-300">Cooming Soon</p>
@@ -162,10 +155,9 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li className="">
+          <li>
             <Link
               href={"/"}
-              className=""
               onMouseClick={handleDropdownNFT}
               onMouseLeave={handleDropdownNFT}
             >
@@ -221,46 +213,6 @@ const Navbar = () => {
             <a href="/about" className="">
               About
             </a>
-            {/* {isDropdownBridge && (
-              <ul className=" absolute bg-primary-black p-4 rounded-xl h-[280px] mt-8 w-[480px]">
-                <li className="mb-4 justify-center items-center">
-                  <p className="text-[18px] mb-2">Solutions</p>
-                  <div className="flex flex-row justify-between mb-4">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Appchains</p>
-                      <p className="text-[14px]">Get with Cosmos SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">Comet RF</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
-                  </div>
-                </li>
-                <li>
-                  <p className="text-[18px]">Learn</p>
-                  <div className="flex flex-row justify-between ">
-                    <span className="flex-flex-col pr-4">
-                      <p className="text-[18px]">Interchain</p>
-                      <p className="text-[14px]">Get started with SDK</p>
-                    </span>
-                    <span className="flex-flex-col">
-                      <p className="text-[18px]">IBC Protocol</p>
-                      <p className="text-[14px]">Get started with Cosmos SDK</p>
-                    </span>
-                  </div>
-                </li>
-              </ul>
-            )} */}
           </li>
         </ul>
         <Button />
@@ -424,8 +376,8 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-      </div>
-    </motion.nav>
+      </nav>
+    </motion.header>
   );
 };
 export default Navbar;

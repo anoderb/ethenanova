@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { StartSteps, TitleText, TypingText } from "../../components/home";
+import { TitleText, TypingText } from "../../components/CustomTexts";
+import StartSteps from "../../components/StartSteps";
 import startingFeatures from "../../lib/constants/startingFeatures";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import planetVariants from "../../lib/framer/planetVariants";
