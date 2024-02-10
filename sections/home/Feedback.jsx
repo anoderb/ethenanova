@@ -1,8 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import styles from '../../styles';
-import { fadeIn, staggerContainer, zoomIn } from '../../utils/motion';
+import { motion } from "framer-motion";
+import fadeIn from "../../lib/framer/animations/fadeIn";
+import zoomIn from "../../lib/framer/animations/zoomIn";
+import staggerContainer from "../../lib/framer/staggerContainer";
+import styles from "../../styles";
 
 const Feedback = () => (
   <section className={`${styles.paddings}`}>
@@ -35,7 +37,7 @@ const Feedback = () => (
       </motion.div> */}
 
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn("left", "tween", 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
         <img

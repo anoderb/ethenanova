@@ -1,8 +1,7 @@
-// 'use client';
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import fadeIn from "../../lib/framer/animations/fadeIn";
 import styles from "../../styles";
-import { fadeIn } from "../../utils/motion";
 
 const ToolsCard = ({
   id,

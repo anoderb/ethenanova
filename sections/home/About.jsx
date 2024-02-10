@@ -1,9 +1,11 @@
 "use client";
-import Link from "next/link";
+
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { TypingText } from "../../components/home";
+import fadeIn from "../../lib/framer/animations/fadeIn";
+import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";
-import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>

@@ -1,10 +1,13 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { capitalizeFirstLetter } from "../../lib/constants";
+import fadeIn from "../../lib/framer/animations/fadeIn";
+import planetVariants from "../../lib/framer/planetVariants";
+import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";
 import { TitleText, TypingText } from "../home";
-import { staggerContainer, fadeIn, planetVariants } from "../../utils/motion";
-import { capitalizeFirstLetter } from "../../constants";
 
 const bridge = [
   {

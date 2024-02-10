@@ -1,7 +1,9 @@
 "use client";
+
 import { motion } from "framer-motion";
+import staggerContainer from "../../lib/framer/staggerContainer";
+import textVariant from "../../lib/framer/text/textVariant";
 import styles from "../../styles";
-import { staggerContainer, textVariant } from "../../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6 `}>

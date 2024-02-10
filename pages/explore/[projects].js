@@ -1,6 +1,6 @@
-import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { Footer, Navbar } from "../../components/home";
+import { useRouter } from "next/router";
+import Layout from "../../components/Layout";
 import HeroExploreProjects from "../../components/explore/HeroExploreProjects";
 import MainExploreProjects from "../../components/explore/MainExploreProjects";
 
@@ -16,11 +16,9 @@ export default function Page() {
   }
 
   return (
-    <div className="bg-primary-black overflow-hidden">
-      <Navbar />
+    <Layout>
       <HeroExploreProjects name={query} />
       <MainExploreProjects query={query} />
-      <Footer />
-    </div>
+    </Layout>
   );
 }

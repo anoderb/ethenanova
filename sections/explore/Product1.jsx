@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../../styles";
-import { exploretools } from "../../constants";
-import { staggerContainer } from "../../utils/motion";
+import { useState } from "react";
 import ExplorePage from "../../components/explore/ExplorePage";
 import { TitleText, TypingText } from "../../components/home";
+import exploreTools from "../../lib/constants/exploreTools";
+import staggerContainer from "../../lib/framer/staggerContainer";
+import styles from "../../styles";
 
 const Product1 = () => {
   const [active, setActive] = useState("world-2");
@@ -22,16 +22,11 @@ const Product1 = () => {
       >
         <TypingText title="| The Space" textStyles="text-center" />
         <TitleText
-          title={
-            <>
-              Choose the space you want <br className="md:block hidden" /> to
-              explore
-            </>
-          }
+          title="Choose the space you want to explore"
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:grid lg:grid-cols-3 flex-col min-h-[70vh] gap-5 lg:space-x-1">
-          {exploretools.map((world, index) => (
+          {exploreTools.map((world, index) => (
             <ExplorePage
               key={world.id}
               {...world}

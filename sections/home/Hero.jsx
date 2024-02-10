@@ -1,10 +1,12 @@
-'use client';
-import { motion } from 'framer-motion';
-import styles from '../../styles';
-import { slideIn, staggerContainer, textVariant } from '../../utils/motion';
+"use client";
+
+import { motion } from "framer-motion";
+import staggerContainer from "../../lib/framer/staggerContainer";
+import textVariant from "../../lib/framer/text/textVariant";
+import styles from "../../styles";
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 ` }>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 `}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -20,9 +22,7 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-          <h1 className={styles.heroHeading}></h1>
           <h1 className={styles.heroHeading}> Interchain</h1>
-
         </motion.div>
       </div>
     </motion.div>

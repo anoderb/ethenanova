@@ -1,13 +1,13 @@
-'use client';
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import styles from '../../styles';
-import { navVariants } from '../../utils/motion';
-import Button from './Button';
+"use client";
 
+import { motion } from "framer-motion";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import navVariants from "../lib/framer/navVariants";
+import styles from "../styles";
+import Button from "./home/Button";
 
-const Navbar=()=> {
+const Navbar = () => {
   const [isDropdownHome, setIsDropdownHome] = useState(false);
   const [isDropdownBridge, setIsDropdownBridge] = useState(false);
   const [isDropdownNFT, setIsDropdownNFT] = useState(false);
@@ -27,10 +27,10 @@ const Navbar=()=> {
       setIsHamburgerMenu(false);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -103,18 +103,28 @@ const Navbar=()=> {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <Link href={'/'} className="font-extrabold text-[24px] leading-[30.24px] text-white">
+        <Link
+          href={"/"}
+          className="font-extrabold text-[24px] leading-[30.24px] text-white"
+        >
           ETHENA NOVA
         </Link>
         <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
           <li className="relative">
-            <Link href={"/"} className=" duration-200" onMouseClick={handleDropdownHome} onMouseLeave={handleDropdownHome} >
+            <Link
+              href={"/"}
+              className=" duration-200"
+              onMouseClick={handleDropdownHome}
+              onMouseLeave={handleDropdownHome}
+            >
               Products
             </Link>
             {isDropdownHome && (
               <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
                 <li className="mb-4 justify-center items-center ">
-                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">Products</p>
+                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">
+                    Products
+                  </p>
                   <div className="flex flex-row justify-between mb-4">
                     <a href="/" className="flex-flex-col pr-4">
                       <p className="text-[18px]">Marketplace</p>
@@ -153,13 +163,20 @@ const Navbar=()=> {
             )}
           </li>
           <li className="">
-            <Link href={'/'} className="" onMouseClick={handleDropdownNFT} onMouseLeave={handleDropdownNFT}>
+            <Link
+              href={"/"}
+              className=""
+              onMouseClick={handleDropdownNFT}
+              onMouseLeave={handleDropdownNFT}
+            >
               Resource
             </Link>
             {isDropdownNFT && (
               <ul className="dropdown absolute bg-gradient-to-b from-gray-900 to-slate-800 p-4 rounded-xl h-[280px] mt-8 w-[480px] opacity-95">
                 <li className="mb-4 justify-center items-center ">
-                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">Resource</p>
+                  <p className="text-[20px] mb-2 hover:text-gray-200 font-bold">
+                    Resource
+                  </p>
                   <div className="flex flex-row justify-between mb-4">
                     <a href="/" className="flex-flex-col pr-4">
                       <p className="text-[18px]">Ecosystem</p>
@@ -177,7 +194,10 @@ const Navbar=()=> {
                     </a>
                     <a href="/" className="flex-flex-col pr-4">
                       <p className="text-[18px]"> Validator </p>
-                      <p className="text-[14px] text-slate-300"> Cooming soon</p>
+                      <p className="text-[14px] text-slate-300">
+                        {" "}
+                        Cooming soon
+                      </p>
                     </a>
                   </div>
                 </li>
@@ -246,7 +266,8 @@ const Navbar=()=> {
         <Button />
         {/* nav mobile */}
         {isHamburgerMenu ? (
-          <svg onClick={handleMenu}
+          <svg
+            onClick={handleMenu}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -395,9 +416,9 @@ const Navbar=()=> {
                 onClick={handleDropdownNFTMobile}
               >
                 <span className="">
-                <a href="/about" className="text-[18px] pb-3">
-                  About
-                </a>
+                  <a href="/about" className="text-[18px] pb-3">
+                    About
+                  </a>
                 </span>
               </li>
             </ul>
@@ -406,5 +427,5 @@ const Navbar=()=> {
       </div>
     </motion.nav>
   );
-}
+};
 export default Navbar;
