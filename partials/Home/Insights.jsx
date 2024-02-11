@@ -4,16 +4,15 @@ import InsightCard from "../../components/InsightCard";
 import EachRender from "../../lib/EachRender";
 import insights from "../../lib/constants/insights";
 import staggerContainer from "../../lib/framer/staggerContainer";
-import styles from "../../styles";
 
 const Insights = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className="relative z-10 paddings">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className="innerWidth mx-auto flex flex-col"
     >
       <TypingText title="| Insight" textStyles="text-center" />
       <TitleText

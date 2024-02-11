@@ -6,7 +6,6 @@ import newFeatures from "../../lib/constants/newFeatures";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import planetVariants from "../../lib/framer/planetVariants";
 import staggerContainer from "../../lib/framer/staggerContainer";
-import styles from "../../styles";
 
 const WhatsNew = () => (
   <section className={`paddings relative z-10`}>
@@ -35,7 +34,7 @@ const WhatsNew = () => (
 
       <motion.div
         variants={planetVariants("right")}
-        className={`flex-1 ${styles.flexCenter}`}
+        className="flexCenter flex-1"
       >
         <img
           src="/images/ethernal/ethernal-5.png"
