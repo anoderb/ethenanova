@@ -1,15 +1,12 @@
 import Layout from "../components/Layout";
 import About from "../partials/Home/AboutHome";
 import Explore from "../partials/Home/ExploreHome";
+import Feedback from "../partials/Home/Feedback";
+import GetStarted from "../partials/Home/GetStarted";
 import Hero from "../partials/Home/HeroHome";
-
-import {
-  Feedback,
-  GetStarted,
-  Insights,
-  WhatsNew,
-  World,
-} from "../sections/home";
+import Insights from "../partials/Home/Insights";
+import WhatsNew from "../partials/Home/WhatsNew";
+import World from "../partials/Home/World";
 
 export default function index() {
   return (

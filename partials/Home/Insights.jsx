@@ -1,12 +1,12 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "../../components/CustomTexts";
-import fadeIn from "../../lib/framer/animations/fadeIn";
+import InsightCard from "../../components/InsightCard";
+import EachRender from "../../lib/EachRender";
+import insights from "../../lib/constants/insights";
 import staggerContainer from "../../lib/framer/staggerContainer";
 import styles from "../../styles";
 
-const World = () => (
+const Insights = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -15,20 +15,21 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Blockchains on the Space" textStyles="text-center" />
+      <TypingText title="| Insight" textStyles="text-center" />
       <TitleText
-        title={<>The blockchain space is as vast as an infinite galaxies.</>}
+        title={<>Insight about Ethena Nova</>}
         textStyles="text-center"
       />
-
-      <motion.div
-        variants={fadeIn("up", "tween", 0.3, 1)}
-        className="relative mt-[68px] flex w-full h-[550px]"
-      >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
-      </motion.div>
+      <div className="mt-[50px] flex flex-col gap-[30px]">
+        <EachRender
+          of={insights}
+          render={(item, index) => (
+            <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
+          )}
+        />
+      </div>
     </motion.div>
   </section>
 );
 
-export default World;
+export default Insights;
