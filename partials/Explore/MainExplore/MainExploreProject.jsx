@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { TitleText, TypingText } from "../../../components/CustomTexts";
 import EachRender from "../../../lib/EachRender";
@@ -27,10 +28,14 @@ export default function MainExploreProjects({ query }) {
               variants={planetVariants("left")}
               className="flexCenter flex-1"
             >
-              <img
+              <Image
                 src={item.image}
                 alt={item.name}
+                width={3000}
+                height={3000}
+                quality={100}
                 className="w-[90%] h-[90%] object-contain"
+                loading="lazy"
               />
             </motion.div>
             <motion.div

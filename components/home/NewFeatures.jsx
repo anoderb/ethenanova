@@ -1,7 +1,15 @@
+import Image from "next/image";
+
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <div className="min-w-[210px] sm:max-w-[250px] flex flex-col flex-1">
     <div className={`w-[70px] h-[70px] flexCenter rounded-[24px] bg-[#323F5D]`}>
-      <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
+      <Image
+        src={imgUrl}
+        alt="icon"
+        className="w-1/2 h-1/2 object-contain"
+        width={70}
+        height={70}
+      />
     </div>
     <h1 className="text-[24px] mt-[26px] font-bold leading-[30.24px] text-white">
       {title}

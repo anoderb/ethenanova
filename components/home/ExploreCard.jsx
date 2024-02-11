@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 
@@ -18,9 +19,13 @@ const ExploreCard = ({
     } transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img
+    <Image
       src={imgUrl}
       alt="planet-04"
+      width={3000}
+      height={3000}
+      quality={100}
+      loading="lazy"
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
     {active !== id ? (
@@ -33,10 +38,13 @@ const ExploreCard = ({
           <div
             className={`w-[60px] h-[60px] mb-[16px] flexCenter rounded-[24px] glassmorphism`}
           >
-            <img
+            <Image
               src="/icons/headset.svg"
               alt="headset"
+              width={250}
+              height={250}
               className="w-1/2 h-1/2 object-contain"
+              loading="lazy"
             />
           </div>
           <p className="text-[16px] font-normal leading-[20.16px] text-white uppercase">

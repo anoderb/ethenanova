@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import EachRender from "../lib/EachRender";
 import socials from "../lib/constants/socials";
@@ -23,10 +24,13 @@ const Footer = () => (
           type="button"
           className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
         >
-          <img
+          <Image
             src="/icons/headset.svg"
             alt="headset"
+            width={24}
+            height={24}
             className="w-[24px] h-[24px] object-contain"
+            loading="lazy"
           />
           <span className="font-normal text-[16px] text-white">
             Enter Space
@@ -49,10 +53,13 @@ const Footer = () => (
             <EachRender
               of={socials}
               render={(social) => (
-                <img
+                <Image
                   key={social.name}
                   src={social.url}
                   alt={social.name}
+                  width={24}
+                  height={24}
+                  loading="lazy"
                   className="w-[24px] h-[24px] object-contain cursor-pointer"
                 />
               )}

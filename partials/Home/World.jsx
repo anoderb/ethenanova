@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { TitleText, TypingText } from "../../components/CustomTexts";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import staggerContainer from "../../lib/framer/staggerContainer";
 
 const World = () => (
-  <section className="padding relative z-10">
+  <section className="paddings relative z-10">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -22,10 +23,14 @@ const World = () => (
         variants={fadeIn("up", "tween", 0.3, 1)}
         className="relative w-full h-[550px] mt-[68px] flex"
       >
-        <img
-          src="/images/map.png"
+        <Image
+          src="/images/map.webp"
           alt="map"
+          width={3000}
+          height={2000}
+          quality={100}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       </motion.div>
     </motion.div>

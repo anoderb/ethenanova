@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { TitleText, TypingText } from "../../components/CustomTexts";
 import NewFeatures from "../../components/home/NewFeatures";
 import EachRender from "../../lib/EachRender";
@@ -36,10 +37,14 @@ const WhatsNew = () => (
         variants={planetVariants("right")}
         className="flexCenter flex-1"
       >
-        <img
-          src="/images/ethernal/ethernal-5.png"
+        <Image
+          src="/images/ethernal/ethernal-5.webp"
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
+          width={3000}
+          height={3000}
+          quality={100}
+          loading="lazy"
         />
       </motion.div>
     </motion.div>

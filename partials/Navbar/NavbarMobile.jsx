@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import useDropdownMobile from "./hooks/useDropdownMobile";
 
@@ -38,7 +39,7 @@ export default function NavbarMobile() {
           onClick={handleMenu}
           className="w-[24px] h-[24px] lg:hidden flex object-contain"
         >
-          <img src="/icons/menu.svg" alt="menu" />
+          <Image src="/icons/menu.svg" alt="menu" width={35} height={35} />
         </button>
       )}
 

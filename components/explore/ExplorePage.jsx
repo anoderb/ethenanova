@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 
@@ -19,11 +20,15 @@ const ToolsCard = ({
     } transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img
+    <Image
       src={imgUrl}
       alt="planet-04"
+      width={3000}
+      height={3000}
+      loading="lazy"
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
+
     {active !== id ? (
       <h2 className="absolute z-0 lg:bottom-20 text-[18px] sm:text-[26px] font-semibold lg:rotate-[-90deg] lg:origin-[0,0] text-white">
         {title}
@@ -34,9 +39,11 @@ const ToolsCard = ({
         className="absolute bottom-0 w-full p-8 flex flex-col justify-start rounded-b-[24px] bg-[rgba(0,0,0,0.5)]"
       >
         <div className="w-[60px] h-[60px] flexCenter rounded-[24px] glassmorphism mb-[16px]">
-          <img
+          <Image
             src="/icons/headset.svg"
             alt="headset"
+            width={60}
+            height={60}
             className="w-1/2 h-1/2 object-contain"
           />
         </div>
