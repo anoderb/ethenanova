@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import fadeIn from "../lib/framer/animations/fadeIn";
+import fadeIn from "../../lib/framer/animations/fadeIn";
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   <motion.div
@@ -13,9 +13,9 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     />
     <div className="w-full flex justify-between items-center">
       <div className="max-w-[650px] flex flex-col flex-1 md:ml-[62px]">
-        <h4 className="text-[26px] lg:text-[42px] font-normal text-white">
+        <h2 className="text-[26px] lg:text-[42px] font-normal text-white">
           {title}
-        </h4>
+        </h2>
         <p className="text-[14px] lg:text-[20px] mt-[16px] font-normal text-secondary-white">
           {subtitle}
         </p>

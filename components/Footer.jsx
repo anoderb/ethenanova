@@ -15,9 +15,9 @@ const Footer = () => (
 
     <div className="innerWidth mx-auto flex flex-col gap-8">
       <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+        <h1 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Space
-        </h4>
+        </h1>
         <Link
           href={"/explore"}
           type="button"
