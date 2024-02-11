@@ -24,9 +24,8 @@ const GetStarted = () => (
         <Image
           src="/images/ethernal/ethernal-1.webp"
           alt="ethernal-1"
-          width={3000}
-          height={3000}
-          quality={100}
+          width={1500}
+          height={1500}
           className="w-[90%] h-[90%] object-contain"
           loading="lazy"
         />

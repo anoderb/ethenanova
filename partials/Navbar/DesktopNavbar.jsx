@@ -13,10 +13,10 @@ export default function DesktopNavbar() {
   } = useDropdownDesktop();
 
   return (
-    <ul className="text-white text-[20px]  flex-row justify-between space-x-32 hidden lg:flex ">
+    <ul className="text-white text-[20px] flex-row justify-between space-x-32 hidden lg:flex ">
       <li className="relative">
         <Link
-          href={"/"}
+          href="/"
           className=" duration-200"
           onMouseClick={handleDropdownHome}
           onMouseLeave={handleDropdownHome}
@@ -30,33 +30,35 @@ export default function DesktopNavbar() {
                 Products
               </p>
               <div className="flex flex-row justify-between mb-4">
-                <a href="/" className="flex-flex-col pr-4">
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Marketplace</p>
                   <p className="text-[14px] text-slate-300">Comming soon</p>
-                </a>
-                <a href="/" className="flex-flex-col pr-4">
+                </Link>
+
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Dex</p>
                   <p className="text-[14px] text-slate-300">Cooming soon</p>
-                </a>
+                </Link>
               </div>
+
               <div className="flex flex-row justify-between">
-                <a href="/tools" className="flex-flex-col pr-4">
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Tools</p>
                   <p className="text-[14px] text-slate-300">Cooming Soon</p>
-                </a>
+                </Link>
               </div>
             </li>
             <li>
               <p className="text-[20px]">Learn</p>
               <div className="flex flex-row justify-between ">
-                <a href="/" className="flex-flex-col pr-4">
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Docs</p>
                   <p className="text-[14px] text-slate-300">Comming soon</p>
-                </a>
-                <a href="/" className="flex-flex-col pr-4">
+                </Link>
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Tutorial</p>
                   <p className="text-[14px] text-slate-300">Cooming soon</p>
-                </a>
+                </Link>
               </div>
             </li>
           </ul>
@@ -64,7 +66,7 @@ export default function DesktopNavbar() {
       </li>
       <li>
         <Link
-          href={"/"}
+          href="/"
           onMouseClick={handleDropdownNFT}
           onMouseLeave={handleDropdownNFT}
         >
@@ -77,24 +79,25 @@ export default function DesktopNavbar() {
                 Resource
               </p>
               <div className="flex flex-row justify-between mb-4">
-                <a href="/" className="flex-flex-col pr-4">
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Ecosystem</p>
                   <p className="text-[14px] text-slate-300">Cooming soon</p>
-                </a>
-                <a href="/" className="flex-flex-col pr-4">
+                </Link>
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Partner</p>
                   <p className="text-[14px] text-slate-300">Cooming soon</p>
-                </a>
+                </Link>
               </div>
+
               <div className="flex flex-row justify-between">
-                <a href="/" className="flex-flex-col pr-4">
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]">Token</p>
                   <p className="text-[14px] text-slate-300">Cooming soon</p>
-                </a>
-                <a href="/" className="flex-flex-col pr-4">
+                </Link>
+                <Link href="/" className="flex-flex-col pr-4">
                   <p className="text-[18px]"> Validator </p>
                   <p className="text-[14px] text-slate-300"> Cooming soon</p>
-                </a>
+                </Link>
               </div>
             </li>
             <li>
@@ -113,10 +116,8 @@ export default function DesktopNavbar() {
           </ul>
         )}
       </li>
-      <li className="">
-        <a href="/about" className="">
-          About
-        </a>
+      <li>
+        <Link href="/about">About</Link>
       </li>
     </ul>
   );

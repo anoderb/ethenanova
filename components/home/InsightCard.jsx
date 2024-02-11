@@ -10,9 +10,8 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     <Image
       src={imgUrl}
       alt="ethernal-1"
-      width={1000}
-      height={1000}
-      quality={100}
+      width={300}
+      height={300}
       loading="lazy"
       className="w-full md:w-[270px] h-[250px] rounded-[32px] object-cover"
     />

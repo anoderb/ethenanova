@@ -26,9 +26,8 @@ const World = () => (
         <Image
           src="/images/map.webp"
           alt="map"
-          width={3000}
-          height={2000}
-          quality={100}
+          width={1500}
+          height={1000}
           className="w-full h-full object-cover"
           loading="lazy"
         />

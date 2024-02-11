@@ -1,8 +1,10 @@
+import dynamic from "next/dynamic";
 import ErrorPage from "next/error";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import HeroExploreProjects from "../../partials/Explore/HeroExploreProjects";
-import MainExploreProjects from "../../partials/Explore/MainExplore/MainExploreProject";
+
+const MainExploreProjects = dynamic(() => import("../../partials/Explore/MainExplore/MainExploreProject"));
 
 export default function Page() {
   const allowedSlugs = ["onramps", "bridge", "tools", "social", "defi", "nfts"];

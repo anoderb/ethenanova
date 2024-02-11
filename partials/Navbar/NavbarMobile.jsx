@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import useDropdownMobile from "./hooks/useDropdownMobile";
 
@@ -183,10 +184,10 @@ export default function NavbarMobile() {
               onClick={handleDropdownNFTMobile}
             >
               <li className="flex flex-row justify-between w-full">
-                <span className="">
-                  <a href="/about" className="text-[18px] pb-3">
+                <span>
+                  <Link href="/about" className="text-[18px] pb-3">
                     About
-                  </a>
+                  </Link>
                 </span>
               </li>
             </button>

@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
 import navVariants from "../lib/framer/navVariants";
-import DesktopNavbar from "../partials/Navbar/DesktopNavbar";
-import NavbarMobile from "../partials/Navbar/NavbarMobile";
 import Button from "./Button";
+
+const DesktopNavbar = dynamic(() => import("../partials/Navbar/DesktopNavbar"));
+const NavbarMobile = dynamic(() => import("../partials/Navbar/NavbarMobile"));
 
 // eslint-disable-next-line
 const Navbar = () => {
@@ -18,7 +20,7 @@ const Navbar = () => {
       <div className="absolute w-[50%] gradient-04" />
       <nav className="innerWidth mx-auto flex justify-between gap-8">
         <Link
-          href={"/"}
+          href="/"
           className="font-extrabold text-[24px] leading-[30.24px] text-white"
         >
           ETHENA NOVA

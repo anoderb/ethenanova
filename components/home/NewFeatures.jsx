@@ -9,6 +9,7 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
         className="w-1/2 h-1/2 object-contain"
         width={70}
         height={70}
+        loading="lazy"
       />
     </div>
     <h1 className="text-[24px] mt-[26px] font-bold leading-[30.24px] text-white">

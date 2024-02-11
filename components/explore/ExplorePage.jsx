@@ -23,8 +23,8 @@ const ToolsCard = ({
     <Image
       src={imgUrl}
       alt="planet-04"
-      width={3000}
-      height={3000}
+      width={1500}
+      height={1500}
       loading="lazy"
       className="absolute w-full h-full object-cover rounded-[24px]"
     />

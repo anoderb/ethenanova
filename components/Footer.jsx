@@ -20,7 +20,7 @@ const Footer = () => (
           Enter the Space
         </h1>
         <Link
-          href={"/explore"}
+          href="/explore"
           type="button"
           className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
         >
@@ -42,7 +42,7 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <Link href={"/"} className="font-extrabold text-[24px] text-white">
+          <Link href="/" className="font-extrabold text-[24px] text-white">
             ETHENANOVA
           </Link>
           <p className="font-normal text-[14px] text-white opacity-50">

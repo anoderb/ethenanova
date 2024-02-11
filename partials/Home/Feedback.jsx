@@ -19,9 +19,8 @@ const Feedback = () => (
         <Image
           src="/images/galaxy.webp"
           alt="galaxy"
-          width={3000}
-          height={2000}
-          quality={100}
+          width={1500}
+          height={1000}
           className="w-full h-auto min-h-[210px] lg:h-[610px] object-cover rounded-[40px]"
           loading="lazy"
         />

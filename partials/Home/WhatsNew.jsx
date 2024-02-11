@@ -41,9 +41,8 @@ const WhatsNew = () => (
           src="/images/ethernal/ethernal-5.webp"
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
-          width={3000}
-          height={3000}
-          quality={100}
+          width={1500}
+          height={1500}
           loading="lazy"
         />
       </motion.div>
