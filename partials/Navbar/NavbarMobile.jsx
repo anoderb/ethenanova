@@ -189,6 +189,19 @@ export default function NavbarMobile() {
                 </span>
               </li>
             </button>
+
+            <button
+              className="flexCenter w-full px-8 mb-1 py-3"
+              type="button"
+              aria-label="about"
+              onClick={handleDropdownNFTMobile}
+            >
+              <a href="/explore" className="w-full">
+                <li className="flexCenter justify-start px-4 py-2 rounded-full w-full bg-white text-sm text-neutral-800">
+                  Get Started
+                </li>
+              </a>
+            </button>
           </ul>
         </div>
       )}
