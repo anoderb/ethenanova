@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "../../components/CustomTexts";
-import NewFeatures from "../../components/NewFeatures";
+import NewFeatures from "../../components/home/NewFeatures";
+import EachRender from "../../lib/EachRender";
 import newFeatures from "../../lib/constants/newFeatures";
 import fadeIn from "../../lib/framer/animations/fadeIn";
 import planetVariants from "../../lib/framer/planetVariants";
@@ -23,9 +24,12 @@ const WhatsNew = () => (
         <TypingText title="| Whats new?" />
         <TitleText title="What's new about Ethena Nova" />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
-          ))}
+          <EachRender
+            of={newFeatures}
+            render={(feature) => (
+              <NewFeatures key={feature.title} {...feature} />
+            )}
+          />
         </div>
       </motion.div>
 

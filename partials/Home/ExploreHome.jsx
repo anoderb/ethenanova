@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { TitleText, TypingText } from "../../components/CustomTexts";
-import ExploreCard from "../../components/ExploreCard";
+import ExploreCard from "../../components/home/ExploreCard";
 import exploreTools from "../../lib/constants/exploreTools";
 import staggerContainer from "../../lib/framer/staggerContainer";
 
