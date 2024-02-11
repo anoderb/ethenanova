@@ -5,7 +5,7 @@ const Button = () => (
   <Link
     href={"/explore"}
     type="button"
-    className="px-6 py-2 hidden lg:flex rounded-full bg-primary text-white"
+    className="px-6 py-2 hidden lg:block rounded-full bg-neutral-800 text-white"
   >
     Get Started
   </Link>
