@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 import About from "../../partials/Home/AboutHome";
 import Hero from "../../partials/Home/HeroHome";
 
-function Aboutpage() {
+export default function Aboutpage() {
   return (
     <Layout>
       <Hero />
@@ -10,5 +10,3 @@ function Aboutpage() {
     </Layout>
   );
 }
-
-export default Aboutpage;

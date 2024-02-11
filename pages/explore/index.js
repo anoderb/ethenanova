@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
-import Hero from "../../sections/explore/Hero";
-import Product1 from "../../sections/explore/Product1";
+import Hero from "../../partials/Explore/HeroExplore";
+import Product1 from "../../partials/Explore/Product1";
 
 function Explore() {
   return (
