@@ -30,7 +30,7 @@ const ToolsCard = ({
       </h2>
     ) : (
       <Link
-        href={`explore/${query}`}
+        href={`explore${query}`}
         className="absolute bottom-0 w-full p-8 flex flex-col justify-start rounded-b-[24px] bg-[rgba(0,0,0,0.5)]"
       >
         <div className="w-[60px] h-[60px] flexCenter rounded-[24px] glassmorphism mb-[16px]">

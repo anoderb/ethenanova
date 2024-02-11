@@ -29,7 +29,7 @@ const ExploreCard = ({
       </h3>
     ) : (
       <div className="absolute bottom-0 p-8 w-full flex flex-col justify-start bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
-        <Link href={`explore/${query}`}>
+        <Link href={`explore${query}`}>
           <div
             className={`w-[60px] h-[60px] mb-[16px] flexCenter rounded-[24px] glassmorphism`}
           >
