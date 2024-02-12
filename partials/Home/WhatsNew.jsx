@@ -9,17 +9,17 @@ import planetVariants from "../../lib/framer/planetVariants";
 import staggerContainer from "../../lib/framer/staggerContainer";
 
 const WhatsNew = () => (
-  <section className={`paddings relative z-10`}>
+  <section className="paddings relative z-10">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`innerWidth mx-auto flex flex-col lg:flex-row gap-8`}
+      className="innerWidth mx-auto flex flex-col lg:flex-row gap-8"
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.2, 1)}
-        className="flex flex-col justify-center flex-[0.95]"
+        className="xPaddings flex flex-col justify-center flex-[0.95]"
       >
         <TypingText title="| Whats new?" />
         <TitleText title="What's new about Ethena Nova" />

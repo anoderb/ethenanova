@@ -10,7 +10,7 @@ const HighlightText = () => {
 };
 
 const About = () => (
-  <section className={`paddings relative z-10`}>
+  <section className="xPaddings relative z-10">
     <div className="gradient-02 z-0" />
 
     <motion.div

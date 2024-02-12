@@ -16,7 +16,7 @@ const Insights = () => (
     >
       <TypingText title="| Insight" textStyles="text-center" />
       <TitleText title="Insight about Ethena Nova" textStyles="text-center" />
-      <div className="mt-[50px] flex flex-col gap-[30px]">
+      <div className="mt-[50px] flex flex-col gap-[30px] w-full">
         <EachRender
           of={insights}
           render={(item, index) => (

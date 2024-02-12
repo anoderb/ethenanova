@@ -9,7 +9,7 @@ import planetVariants from "../../lib/framer/planetVariants";
 import staggerContainer from "../../lib/framer/staggerContainer";
 
 const GetStarted = () => (
-  <section className="relative z-10 paddings">
+  <section className="paddings relative z-10">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -26,14 +26,14 @@ const GetStarted = () => (
           alt="ethernal-1"
           width={1500}
           height={1500}
-          className="w-[90%] h-[90%] object-contain"
           loading="lazy"
+          className="w-[88%] h-[88%] object-contain"
         />
       </motion.div>
 
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
-        className="flex flex-col justify-center flex-[0.75]"
+        className="xPaddings flex flex-col justify-center flex-[0.75]"
       >
         <TypingText title="| How Metaversus Works" />
         <TitleText title="Get started with just a few clicks" />

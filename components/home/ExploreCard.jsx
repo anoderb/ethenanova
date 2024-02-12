@@ -22,10 +22,10 @@ const ExploreCard = ({
     <Image
       src={imgUrl}
       alt="planet-04"
-      width={1500}
-      height={1500}
+      fill
+      sizes="100vw"
       loading="lazy"
-      className="absolute w-full h-full object-cover rounded-[24px]"
+      className="absolute object-cover rounded-[24px]"
     />
     {active !== id ? (
       <h3 className="absolute z-0 lg:bottom-20 text-[18px] sm:text-[26px] font-semibold text-whit lg:rotate-[-90deg] lg:origin-[0,0] text-white">
