@@ -105,3 +105,70 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+@layer components {
+  /* styles/index.js */
+  .innerWidth {
+    @apply w-full 2xl:max-w-[1280px];
+  }
+  .interWidth {
+    @apply w-[100%] lg:w-[80%];
+  }
+
+  .paddings {
+    @apply p-8 lg:px-6 sm:p-16;
+  }
+  .yPaddings {
+    @apply py-8 sm:py-16;
+  }
+  .xPaddings {
+    @apply px-6 sm:px-16;
+  }
+  .topPaddings {
+    @apply pt-8 sm:pt-16;
+  }
+  .bottomPaddings {
+    @apply pb-8 sm:pb-16;
+  }
+  .navPadding {
+    @apply pt-[98px];
+  }
+
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+  .flexStart {
+    @apply flex justify-start items-start;
+  }
+  .flexEnd {
+    @apply flex justify-end;
+  }
+
+  /* hero heading */
+  .sizeTextHeroHeading {
+    @apply text-[24px] sm:text-[40px] md:text-[80px] lg:text-[124px];
+  }
+  .leadingTextHeroHeading {
+    @apply leading-[24.4px] sm:leading-[24.4px] md:leading-[84.4px] lg:leading-[108.4px];
+  }
+  .heroHeading {
+    @apply sizeTextHeroHeading leadingTextHeroHeading font-bold uppercase text-white;
+  }
+
+  /* hero d text */
+  .widthHeroDText {
+    @apply w-[60px] sm:w-[80px] md:w-[212px];
+  }
+  .heightHeroDText {
+    @apply h-[38px] sm:h-[48px] md:h-[108px];
+  }
+  .sizeHeroDText {
+    @apply widthHeroDText heightHeroDText;
+  }
+  .borderHeroDText {
+    @apply border-[9px] md:border-[18px] rounded-r-[50px] border-white;
+  }
+  .heroDText {
+    @apply sizeHeroDText mx-[6px] borderHeroDText sm:mx-2;
+  }
+}

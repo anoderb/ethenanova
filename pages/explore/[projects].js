@@ -1,8 +1,10 @@
-import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import ErrorPage from "next/error";
-import { Footer, Navbar } from "../../components/home";
-import HeroExploreProjects from "../../components/explore/HeroExploreProjects";
-import MainExploreProjects from "../../components/explore/MainExploreProjects";
+import { useRouter } from "next/router";
+import Layout from "../../components/Layout";
+import HeroExploreProjects from "../../partials/Explore/HeroExploreProjects";
+
+const MainExploreProjects = dynamic(() => import("../../partials/Explore/MainExplore/MainExploreProject"));
 
 export default function Page() {
   const allowedSlugs = ["onramps", "bridge", "tools", "social", "defi", "nfts"];
@@ -16,11 +18,9 @@ export default function Page() {
   }
 
   return (
-    <div className="bg-primary-black overflow-hidden">
-      <Navbar />
+    <Layout>
       <HeroExploreProjects name={query} />
       <MainExploreProjects query={query} />
-      <Footer />
-    </div>
+    </Layout>
   );
 }

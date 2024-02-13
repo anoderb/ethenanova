@@ -1,15 +1,12 @@
-import { Footer, Navbar } from '../../components/home';
-import { About, Hero } from '../../sections/home';
+import Layout from "../../components/Layout";
+import About from "../../partials/Home/AboutHome";
+import Hero from "../../partials/Home/HeroHome";
 
-function Aboutpage() {
+export default function Aboutpage() {
   return (
-    <div className="bg-primary-black overflow-hidden">
-      <Navbar />
+    <Layout>
       <Hero />
-      <About/>
-      <Footer />
-    </div>
+      <About />
+    </Layout>
   );
 }
-
-export default Aboutpage;
